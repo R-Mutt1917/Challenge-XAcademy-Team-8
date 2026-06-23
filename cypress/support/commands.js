@@ -42,3 +42,14 @@ Cypress.Commands.add('validarAPI', (codigo) => {
     }
 
 });
+
+Cypress.Commands.add('llenarFormularioContacto', (usuario) => {
+  cy.get('[data-testid="ContactName"]').type(usuario.name);
+  cy.get('[data-testid="ContactEmail"]').type(usuario.email);
+  cy.get('[data-testid="ContactPhone"]').type(usuario.phone);
+  cy.get('[data-testid="ContactSubject"]').type(usuario.subject);
+  cy.get('[data-testid="ContactDescription"]').type(usuario.description);
+  
+  // Enviamos el formulario de una vez
+  cy.get('.d-grid > .btn').click();
+});
