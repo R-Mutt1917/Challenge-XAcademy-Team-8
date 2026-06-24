@@ -1,6 +1,7 @@
 # Challenge QA Automation - Cohorte I - 2026
 
 ## Proyecto: Shady Meadows (Bed & Breakfast)
+### Toda la suite de pruebas fue unificada y validada con éxito en la rama de `testing`
 
 ### 👥 Integrantes del Grupo 8
 
