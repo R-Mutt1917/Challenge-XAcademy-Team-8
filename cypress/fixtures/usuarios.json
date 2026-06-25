@@ -1,0 +1,16 @@
+[
+    {
+        "descripcion": "Usuario con datos válidos",
+        "nombre": "Carlos",
+        "apellido": "Mendoza",
+        "email": "carlos.mendoza@example.com",
+        "telefono": "11234567890"
+    },
+    {
+        "descripcion": "Usuario con datos invalidos",
+        "nombre": "Ana",
+        "apellido": "Gómez",
+        "email": "ana.gomez@example.com",
+        "telefono": "11456789"
+    }
+]

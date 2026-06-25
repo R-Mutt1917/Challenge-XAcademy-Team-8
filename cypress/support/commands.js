@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('completarFormulario', () => {
+    cy.fixture('usuarios').then((usuario) => {
+        cy.get('[name="firstname"]').type(usuario[0].nombre);
+        cy.get('[name="lastname"]').type(usuario[0].apellido);
+        cy.get('[name="email"]').type(usuario[0].email);
+        cy.get('[name="phone"]').type(usuario[0].telefono);
+    })
+})
+
+Cypress.Commands.add('validarAPI', (codigo) => {
+    if (codigo == 400) {
+        cy.log('No se ha cargado ninguna reserva')
+    }
+    else if (codigo == 201) {
+        cy.log('Reserva cargada correctamente')
+    }
+
+});
