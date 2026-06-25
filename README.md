@@ -6,10 +6,10 @@
 ### 👥 Integrantes del Grupo 8
 
 * Augusto Tissera - @AugustoTissera
-* Brandon Erazo - @Brandon-Erazo
-* Gisela Ferreira - @giselaferreira-prog
-* Kevin Sarmiento - @kevinjsarmiento25
-* Matías Zelarayán - @R-Mutt1917
+* Brandon Erazo - brandon.andres.erazo@gmail.com
+* Gisela Ferreira - giselaferreira0@gmail.com
+* Kevin Sarmiento - Kevinjsarmiento25@gmail.com
+* Matías Zelarayán - matiaszelarayandev@gmail.com
 
 ### 📊 Enlaces del Proyecto
 * 📝 [Link a la Planilla de Casos de Prueba](https://docs.google.com/spreadsheets/d/103o0XyNgEhdyLfPRezAuwwcU472PoZO6/edit?usp=sharing&ouid=103673024797459601949&rtpof=true&sd=true)
