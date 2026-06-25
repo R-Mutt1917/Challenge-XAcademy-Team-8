@@ -5,7 +5,7 @@
 
 ### 👥 Integrantes del Grupo 8
 
-* Augusto Tissera - @AugustoTissera
+* Augusto Tissera - augusto.tissera2k@gmail.com
 * Brandon Erazo - brandon.andres.erazo@gmail.com
 * Gisela Ferreira - giselaferreira0@gmail.com
 * Kevin Sarmiento - Kevinjsarmiento25@gmail.com
