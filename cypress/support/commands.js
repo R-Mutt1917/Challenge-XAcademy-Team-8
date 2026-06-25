@@ -23,3 +23,33 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('completarFormulario', () => {
+    cy.fixture('usuarios').then((usuario) => {
+        cy.get('[name="firstname"]').type(usuario[0].nombre);
+        cy.get('[name="lastname"]').type(usuario[0].apellido);
+        cy.get('[name="email"]').type(usuario[0].email);
+        cy.get('[name="phone"]').type(usuario[0].telefono);
+    })
+})
+
+Cypress.Commands.add('validarAPI', (codigo) => {
+    if (codigo == 400) {
+        cy.log('No se ha cargado ninguna reserva')
+    }
+    else if (codigo == 201) {
+        cy.log('Reserva cargada correctamente')
+    }
+
+});
+
+Cypress.Commands.add('llenarFormularioContacto', (usuario) => {
+  cy.get('[data-testid="ContactName"]').type(usuario.name);
+  cy.get('[data-testid="ContactEmail"]').type(usuario.email);
+  cy.get('[data-testid="ContactPhone"]').type(usuario.phone);
+  cy.get('[data-testid="ContactSubject"]').type(usuario.subject);
+  cy.get('[data-testid="ContactDescription"]').type(usuario.description);
+  
+  // Enviamos el formulario de una vez
+  cy.get('.d-grid > .btn').click();
+});
