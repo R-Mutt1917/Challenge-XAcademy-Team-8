@@ -33,3 +33,31 @@ describe('Modulo de Reservas', () => {
     })
 })
 
+describe('Modulo de Contacto', () => {
+
+  Cypress.on('uncaught:exception', () => {
+    return false;
+  });
+  
+  beforeEach(() => {
+    cy.visit('https://automationintesting.online/');
+    
+    // Cargamos el fixture y lo guardamos en un alias llamado 'datos'
+    cy.fixture('contactoData').as('datos');
+  });
+  
+  it('Llenar formulario de contacto con datos del fixture', function () {
+    // Usamos 'function ()' en el 'it' para poder acceder al alias con 'this.datos'
+    
+    // Llamamos al comando personalizado pasando los datos del fixture
+    cy.llenarFormularioContacto(this.datos);
+
+    // Validar la confirmación de éxito utilizando el nombre del fixture
+    cy.get('.col-lg-8 > .card > .card-body > .h4')
+      .should('be.visible')
+      .and('contain', `Thanks for getting in touch ${this.datos.name}!`);
+  });
+
+});
+
+
