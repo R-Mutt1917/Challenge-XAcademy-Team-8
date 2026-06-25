@@ -7,7 +7,7 @@
 
 * Augusto Tissera - @AugustoTissera
 * Brandon Erazo - @Brandon-Erazo
-* Gisela Ferreira -
+* Gisela Ferreira - @giselaferreira-prog
 * Kevin Sarmiento - @kevinjsarmiento25
 * Matías Zelarayán - @R-Mutt1917
 
