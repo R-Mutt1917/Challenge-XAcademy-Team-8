@@ -1,5 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^15.17.0"
+    "@4tw/cypress-drag-drop": "^2.3.1",
+    "cypress": "^15.17.0",
+    "cypress-real-events": "^1.15.0"
   }
 }
